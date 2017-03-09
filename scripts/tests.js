@@ -20,6 +20,7 @@
     });
 
 
+    // printOrders() did not return a value.
     // The Truck module was modified so that the printOrders() method returns
     // every order within the DataStore. This allows the output to be compared.
 
