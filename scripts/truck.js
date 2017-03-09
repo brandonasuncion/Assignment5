@@ -24,7 +24,7 @@
             console.log(this.db.get(id));
         }.bind(this));
 
-        return Object(this.db.getAll());
+        return this.db.getAll();
     };
 
     Truck.prototype.getOrder = function(id) {

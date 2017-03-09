@@ -20,6 +20,9 @@
     });
 
 
+    // The Truck module was modified so that the printOrders() method returns
+    // every order within the DataStore. This allows the output to be compared.
+
     QUnit.test('Truck Test', function(assert) {
 
         var App = window.App || {};
@@ -55,7 +58,7 @@
                 'coffee': 'double mocha',
                 'emailAddress': 'me@goldfinger.com'
             }
-        }, 'myTruck test');
+        }, 'myTruck - after createOrder()');
 
         myTruck.deliverOrder('dr@no.com');
         myTruck.deliverOrder('m@bond.com');
